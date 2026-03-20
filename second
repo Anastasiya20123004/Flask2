@@ -7,12 +7,3 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return "Hello, World! Це мій перший Flask-додаток."
-@app.route('/path')
-@app.route('/', methods=['GET', 'POST'])
-flask.request
-request.args
-request.json
-render_template
-# 3. Запуск сервера
-if __name__ == '__main__':
-    app.run(debug=True) # debug=True дозволяє бачити помилки та автоматично перезапускати сервер
