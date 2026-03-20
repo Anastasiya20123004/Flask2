@@ -1,0 +1,13 @@
+from flask import Flask
+
+# 1. Створення екземпляра додатку
+app = Flask(__name__)
+
+# 2. Визначення маршруту (route)
+@app.route('/')
+def home():
+    return "Hello, World! Це мій перший Flask-додаток."
+
+# 3. Запуск сервера
+if __name__ == '__main__':
+    app.run(debug=True) # debug=True дозволяє бачити помилки та автоматично перезапускати сервер
